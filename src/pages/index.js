@@ -28,7 +28,12 @@ export default function Home() {
 							{products.map((product, index) => {
 								return (
 									<li key={index}>
-										<img src={product.image} alt={product.title} />
+										<Image
+											src={product.image}
+											width='600'
+											height='600'
+											alt={product.title}
+										/>
 										<h3>{product.title}</h3>
 										<p>£{product.price}</p>
 										<Button>Add to cart</Button>
